@@ -10,7 +10,7 @@ from discord.ext import commands
 cg = CoinGeckoAPI()
 client = discord.Client()
 bot = commands.Bot(command_prefix="$")
-repository = "https://github.com/ColdBio/Simple-Crypto-Dicord-Bot"
+repository = "https://github.com/joshimar399/CoinGecko-bot.git"
 
 response = requests.get("https://newsapi.org/v2/everything?q=crypto&apiKey={insert your own api key}")
 data = json.loads(response.text)
@@ -39,7 +39,7 @@ def get_crypto_chart(token):
         plt.title(f'7-day historical market price of {token}', fontsize=15, color= 'white', fontweight='bold');
 
 
-        filename =  "/Users/coldbio/Desktop/test.png"
+        filename =  "test.png"
         plt.savefig(filename, transparent=True)
 
         plt.close()
@@ -178,7 +178,7 @@ async def on_message(message):
         embed.add_field(name="All Time High 👑", value= btc.coin_ath_price, inline=True)
         embed.add_field(name="ATH Percent Change 📊", value= btc.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = btc.coin_atl, inline=True)
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -209,7 +209,7 @@ async def on_message(message):
         embed.add_field(name="All Time High 👑", value= xrp.coin_ath_price, inline=True)
         embed.add_field(name="ATH Percent Change 📊", value= xrp.coin_ath_change_percent , inline=True)
         embed.add_field(name="ATL 😢", value = xrp.coin_atl, inline=True)
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -240,7 +240,7 @@ async def on_message(message):
         embed.add_field(name="All Time High 👑", value= eth.coin_ath_price, inline=True)
         embed.add_field(name="ATH Percent Change 📊", value= eth.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = eth.coin_atl, inline=True)
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -271,7 +271,7 @@ async def on_message(message):
         embed.add_field(name="ATH Percent Change 📊", value=link.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = link.coin_atl, inline=True)
 
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -301,7 +301,7 @@ async def on_message(message):
         embed.add_field(name="All Time High 👑", value= ada.coin_ath_price, inline=True)
         embed.add_field(name="ATH Percent Change 📊", value= ada.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = ada.coin_atl, inline=True)
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -331,7 +331,7 @@ async def on_message(message):
         embed.add_field(name="All Time High 👑", value= avax.coin_ath_price, inline=True)
         embed.add_field(name="ATH Percent Change 📊", value= avax.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = avax.coin_atl, inline=True)
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -362,7 +362,7 @@ async def on_message(message):
         embed.add_field(name="ATH Percent Change 📊", value= doge.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = doge.coin_atl, inline=True)
         
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -393,7 +393,7 @@ async def on_message(message):
         embed.add_field(name="ATH Percent Change 📊", value= vet.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = vet.coin_atl, inline=True)
 
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -424,7 +424,7 @@ async def on_message(message):
         embed.add_field(name="ATH Percent Change 📊", value= filecoin.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = filecoin.coin_atl, inline=True)
 
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
@@ -457,7 +457,7 @@ async def on_message(message):
         embed.add_field(name="ATH Percent Change 📊", value= qnt.coin_ath_change_percent, inline=True)
         embed.add_field(name="ATL 😢", value = qnt.coin_atl, inline=True)
 
-        file = discord.File("/Users/coldbio/Desktop/test.png", filename="image.png")
+        file = discord.File("test.png", filename="image.png")
 
         embed.set_image(url="attachment://image.png")
 
